@@ -37,6 +37,10 @@ function ValidateInput($value)
     }
     else
     {
+      if ($value < 0)
+      {
+        echo "Je bedrag is negetief";
+      }
       return $value;
     }
   } catch (\Exception $e) {
